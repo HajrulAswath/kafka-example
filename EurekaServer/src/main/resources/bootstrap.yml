@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: eureka-server
+    
+server:
+  port: 8061
+
+eureka:
+  instance:
+    hostname: localhost
+    #Eureka service discovery client  sends hertbeats
+    leaseRenewalIntervalInSeconds: 2
+    #Eureka Service Discovery wait for hearbeat before removing from list
+    leaseExpirationDurationInSeconds: 2
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    
+  
+    
+
+
+

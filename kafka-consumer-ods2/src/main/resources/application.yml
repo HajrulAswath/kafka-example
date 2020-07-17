@@ -1,0 +1,15 @@
+kafka:
+  bootstrap-servers: localhost:9092
+  consumer:
+    group-id: myGroup
+    auto-offset-reset: earliest
+    
+server:
+  port: 7092
+   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8061/eureka/
+    registerWithEureka: true
+    fetchRegistry: true    
